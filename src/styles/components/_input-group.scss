@@ -1,8 +1,14 @@
 .input-group {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin-bottom: $l-size;
+  margin-bottom: $s-size;
+}
+
+.input-group__summary {
+  display: flex;
+  align-items: center;
+  margin-bottom: $s-size;
+  justify-content: space-between;
 }
 
 .input-group__item {

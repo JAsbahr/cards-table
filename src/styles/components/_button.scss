@@ -29,7 +29,12 @@
 }
 
 .button--active {
-  border: 5px solid darken($blue, 10%)
+  // border: 5px solid darken($blue, 10%)
+  background: rgb(255, 140, 0);
+}
+
+.button--active:hover {
+  background: darken(rgb(255, 140, 0), 10%)
 }
 
 .button--green {

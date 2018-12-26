@@ -12,13 +12,26 @@ export const CardsSummary = ({
     const percentageForPromoted = Math.round(((totalPointsForPromoted / totalCostsForPromoted)) * 100)
     const percentageFrom = Math.round((((totalEuroFrom * 0.95) / totalPointsFrom) - 1) * 100) * 2
     const percentageFromPromoted = Math.round(((totalPointsFromPromoted / (totalEuroFromPromoted * 0.95))) * 100)
+    const profit = percentageFor + percentageFrom
+    const profitPromo = Math.round(((percentageForPromoted / percentageFromPromoted) - 1) * 100)
     return (
         <div className="page-header">
             <div className="content-container">
-                <h1 className="page-header__title">From Puca: <span>{percentageFrom}%</span></h1>
-                <h1 className="page-header__title">For Puca: <span>{percentageFor}%</span></h1>
-                <h1 className="page-header__title">Promo from Puca: <span>{percentageFromPromoted}%</span></h1>
-                <h1 className="page-header__title">Promo for Puca: <span>{percentageForPromoted}%</span></h1>
+                <div className="input-group__summary">
+                    <div>
+                        <h1 className="page-header__title">From Puca: <span>{percentageFrom}%</span></h1>
+                        <h1 className="page-header__title">For Puca: <span>{percentageFor}%</span></h1>
+                        <h1 className="page-header__title">Profit: <span className="profit-span">{profit}%</span></h1>
+                    </div>
+                </div>
+                <div className="input-group__summary">
+                    <div>
+                        <h1 className="page-header__title">Promo from Puca: <span>{percentageFromPromoted}%</span></h1>
+                        <h1 className="page-header__title">Promo for Puca: <span>{percentageForPromoted}%</span></h1>
+                        <h1 className="page-header__title">Profit : <span className="profit-span">{profitPromo}%</span></h1>
+                    </div>
+                </div>
+
                 <div className="input-group">
                     <div className="input-group__item">
                         <NavLink to="/frompuca" className="button" activeClassName="button button--active">From Puca</NavLink>
