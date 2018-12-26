@@ -10,12 +10,12 @@ import * as firebase from "firebase" //importing all named exports into one vari
 // };
 
 const config = {
-    apiKey: "AIzaSyAb2pr23At1c92PychsKolenX9k8BZw7fs",
-    authDomain: "expensify-enhanced.firebaseapp.com",
-    databaseURL: "https://expensify-enhanced.firebaseio.com",
-    projectId: "expensify-enhanced",
-    storageBucket: "",
-    messagingSenderId: "368877837971"
+    apiKey: "AIzaSyAYG-DUOaUPFDJv8DY0JDghGZBVy1dFzNo",
+    authDomain: "puca-expensify.firebaseapp.com",
+    databaseURL: "https://puca-expensify.firebaseio.com",
+    projectId: "puca-expensify",
+    storageBucket: "puca-expensify.appspot.com",
+    messagingSenderId: "380855011372"
 }
 
 firebase.initializeApp(config);

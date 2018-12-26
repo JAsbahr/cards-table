@@ -1,24 +1,41 @@
 .button {
-    background: $blue;
-    border: none;
-    color: #fff;
-    display: inline-block;   // to be part of the container (padding)
-    font-size: $font-size-large;
-    font-weight: 300;
-    line-height: 1;
-    padding: $s-size;
-    text-decoration: none;
+  background: $blue;
+  border: none;
+  color: #fff;
+  display: inline-block; // to be part of the container (padding)
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+  border-radius: 15px;
 }
 
-.button--link {  // -- for modifier 
-    background: none;
+.button:hover {
+  background: darken($blue, 10%)
+}
+
+.button--link {
+  // -- for modifier 
+  background: none;
 }
 
 .button--secondary {
-    background: #888888;
+  background: #888888;
 }
 
-.button--twitter {
-    background: #8EE5EE;
-    margin-top: $s-size;
+.button--secondary:hover {
+  background: darken(#888888, 10%)
+}
+
+.button--active {
+  border: 5px solid darken($blue, 10%)
+}
+
+.button--green {
+  background: #228B22
+}
+
+.button--green:hover {
+  background: darken(#228B22, 10%)
 }

@@ -7,14 +7,14 @@ export const PublicRoute = ({
     component: Component,  // component als props in AppRouter, wird umbenannt in Component (muss später gerendered werden)
     ...rest // variable with all the props which did not get desctructured
 }) => (
-    <Route {...rest} component={(props) => (
-        !isAuthenticated ? (
-            <Component {...props}/>
-        ) : (
-            <Redirect to="/dashboard" />
-        )
-    )}/>
-)
+        <Route {...rest} component={(props) => (
+            !isAuthenticated ? (
+                <Component {...props} />
+            ) : (
+                    <Redirect to="/forpuca" />
+                )
+        )} />
+    )
 
 const mapStateToProps = (state) => ({
     isAuthenticated: !!state.auth.uid

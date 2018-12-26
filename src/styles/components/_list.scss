@@ -1,63 +1,83 @@
 .list-header {
-    background: $off-white;
-    border: 1px solid darken($off-white, 7%);
-    color: $grey;
-    display: flex;
-    justify-content: space-between;
-    padding: $s-size $m-size;
+  background: $off-white;
+  border: 1px solid darken($off-white, 7%);
+  color: $grey;
+  display: flex;
+  padding: $s-size $m-size;
 }
 
 .list-body {
-    margin-bottom: $m-size;
-    @media (min-width: $desktop-breakpoint) {
-        margin-bottom: $l-size;
-    }
+  margin-bottom: $l-size;
 }
 
 .list-item {
-    border: 1px solid darken($off-white, 7%);
-    border-top: none;
-    color: $dark-grey;
-    display: flex;
-    flex-direction: column;
-    padding: $s-size;
-    text-decoration: none;
-    transition: background .3s ease;
-    &:hover {   // same as -list-item:hover 
-        background: $off-white;
-    }
-    @media (min-width: $desktop-breakpoint) {
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: $m-size;
-    }
+  border: 1px solid darken($off-white, 7%);
+  border-top: none;
+  color: $dark-grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $m-size;
+  text-decoration: none;
+  transition: background .3s ease;
+  &:hover {
+    // same as -list-item:hover 
+    background: $off-white;
+  }
+}
+
+.list-item-long {
+  width: 29rem;
+  word-break: break-all;
+}
+
+.list-item-middle {
+  width: 16.95rem;
+  text-align: center;
+}
+
+.list-item-short {
+  width: 11.3rem;
+  text-align: center;
+}
+
+.list-item-very-short {
+  width: 5.65rem;
+  text-align: center;
+}
+
+.item-green {
+  color: green;
+}
+
+.item-red {
+  color: red;
 }
 
 .list-item--message {
-    align-items: center;
-    color: $grey;
-    justify-content: center;
-    padding: $m-size;
-    &:hover {
-        background: none;
-    }
+  align-items: center;
+  color: $grey;
+  justify-content: center;
+  padding: $m-size;
+  &:hover {
+    background: none;
+  }
 }
 
 .list-item__title {
-    margin: 0;
-    word-break: break-all;  //edge-case
+  margin: 0;
+  word-break: break-all; //edge-case
 }
 
 .list-item__sub-title {
-    color: $grey;
-    font-size: $font-size-small;
+  color: $grey;
+  font-size: $font-size-small;
 }
 
 .list-item__data {
-    margin: $s-size 0 0 0;
-    @media (min-width: $desktop-breakpoint) {
-        margin: 0;
-        padding-left: $s-size;
-    }
+  margin: $s-size 0 0 0;
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0;
+    padding-left: $s-size;
+  }
 }
