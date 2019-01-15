@@ -16,6 +16,11 @@
   }
 }
 
+.page-header__404 {
+  font-weight: 200;
+  padding-bottom: $s-size;
+}
+
 .page-header__hidden {
   margin-top: 0;
   span {
