@@ -18,14 +18,12 @@ export const CardsSummary = ({
         <div className="page-header">
             <div className="content-container">
                 <div className="input-group__summary">
-                    <div>
+                    <div className="summary-item">
                         <h1 className="page-header__title">From Puca: <span>{percentageFrom}%</span></h1>
                         <h1 className="page-header__title">For Puca: <span>{percentageFor}%</span></h1>
                         <h1 className="page-header__title">Profit: <span className="profit-span">{profit}%</span></h1>
                     </div>
-                </div>
-                <div className="input-group__summary">
-                    <div>
+                    <div className="summary-item">
                         <h1 className="page-header__title">Promo from Puca: <span>{percentageFromPromoted}%</span></h1>
                         <h1 className="page-header__title">Promo for Puca: <span>{percentageForPromoted}%</span></h1>
                         <h1 className="page-header__title">Profit : <span className="profit-span">{profitPromo}%</span></h1>

@@ -20,6 +20,11 @@
   background: none;
 }
 
+.button--link:hover {
+  background: white;
+  color: $dark-blue;
+}
+
 .button--secondary {
   background: #888888;
 }

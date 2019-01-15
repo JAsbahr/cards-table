@@ -5,10 +5,13 @@
 }
 
 .input-group__summary {
-  display: flex;
-  align-items: center;
-  margin-bottom: $s-size;
-  justify-content: space-between;
+  overflow: hidden;
+  padding-bottom: $l-size;
+}
+
+.summary-item {
+  float: left;
+  padding-right: $xl-size;
 }
 
 .input-group__item {
