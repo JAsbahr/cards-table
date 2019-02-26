@@ -24,7 +24,11 @@ export const CardListFromPuca = (props) => { // export for testing
                             <span>No cards found</span>
                         </div>
                     ) : (
+                            props.cards.length > 7 ? 
                             props.cards.slice(props.cards.length - arrayLength, props.cards.length).reverse().map((card) => {
+                                return <CardListItemFromPuca key={card.id} location={props.location} {...card} />
+                            }) : 
+                            props.cards.reverse().map((card) => {
                                 return <CardListItemFromPuca key={card.id} location={props.location} {...card} />
                             })
                         )
@@ -36,7 +40,11 @@ export const CardListFromPuca = (props) => { // export for testing
                                 <span>No cards found</span>
                             </div>
                         ) : (
+                                props.cardsPromoted.length > 7 ? 
                                 props.cardsPromoted.slice(props.cardsPromoted.length - arrayLength, props.cardsPromoted.length).reverse().map((card) => {
+                                    return <CardListItemFromPuca key={card.id} location={props.location} {...card} />
+                                }) : 
+                                props.cardsPromoted.reverse().map((card) => {
                                     return <CardListItemFromPuca key={card.id} location={props.location} {...card} />
                                 })
                             )
