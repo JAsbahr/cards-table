@@ -19,29 +19,29 @@ export const CardsSummary = ({
             <div className="content-container">
                 <div className="input-group__summary">
                     <div className="summary-item">
-                        <h1 className="page-header__title">From Puca: <span>{percentageFrom}%</span></h1>
-                        <h1 className="page-header__title">For Puca: <span>{percentageFor}%</span></h1>
+                        <h1 className="page-header__title">From Cardsphere: <span>{percentageFrom}%</span></h1>
+                        <h1 className="page-header__title">For Cardsphere: <span>{percentageFor}%</span></h1>
                         <h1 className="page-header__title">Profit: <span className="profit-span">{profit}%</span></h1>
                     </div>
                     <div className="summary-item">
-                        <h1 className="page-header__title">Promo from Puca: <span>{percentageFromPromoted}%</span></h1>
-                        <h1 className="page-header__title">Promo for Puca: <span>{percentageForPromoted}%</span></h1>
+                        <h1 className="page-header__title">From Puca: <span>{percentageFromPromoted}%</span></h1>
+                        <h1 className="page-header__title">For Puca: <span>{percentageForPromoted}%</span></h1>
                         <h1 className="page-header__title">Profit : <span className="profit-span">{profitPromo}%</span></h1>
                     </div>
                 </div>
 
                 <div className="input-group">
                     <div className="input-group__item">
-                        <NavLink to="/frompuca" className="button" activeClassName="button button--active">From Puca</NavLink>
+                        <NavLink to="/frompuca" className="button" activeClassName="button button--active">From Cardsphere</NavLink>
                     </div>
                     <div className="input-group__item">
-                        <NavLink to="/forpuca" className="button" activeClassName="button button--active">For Puca</NavLink>
+                        <NavLink to="/forpuca" className="button" activeClassName="button button--active">For Cardsphere</NavLink>
                     </div>
                     <div className="input-group__item">
-                        <NavLink to="/frompucapromoted" className="button" activeClassName="button button--active">Promo from Puca</NavLink>
+                        <NavLink to="/frompucapromoted" className="button" activeClassName="button button--active">From Puca</NavLink>
                     </div>
                     <div className="input-group__item">
-                        <NavLink to="/forpucapromoted" className="button" activeClassName="button button--active">Promo for Puca</NavLink>
+                        <NavLink to="/forpucapromoted" className="button" activeClassName="button button--active">For Puca</NavLink>
                     </div>
                 </div>
             </div>

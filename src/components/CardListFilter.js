@@ -27,16 +27,16 @@ export class CardListFilter extends React.Component {
                         />
                     </div>
                     <div className="input-group__item">
-                        <Link className="button button--green" to="frompuca/create">Add from</Link>
+                        <Link className="button button--green" to="frompuca/create">From Cardsphere</Link>
                     </div>
                     <div className="input-group__item">
-                        <Link className="button button--green" to="forpuca/create">Add for</Link>
+                        <Link className="button button--green" to="forpuca/create">For Cardsphere</Link>
                     </div>
                     <div className="input-group__item">
-                        <Link className="button button--green" to="frompucapromoted/create">Add promo from</Link>
+                        <Link className="button button--green" to="frompucapromoted/create">From Puca</Link>
                     </div>
                     <div className="input-group__item">
-                        <Link className="button button--green" to="forpucapromoted/create">Add promo for</Link>
+                        <Link className="button button--green" to="forpucapromoted/create">For Puca</Link>
                     </div>
                 </div>
             </div>

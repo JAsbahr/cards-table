@@ -11,7 +11,7 @@ export const CardListFromPuca = (props) => { // export for testing
             <div className="list-header">
                 <div className="list-item-long">Card name</div>
                 <div className="list-item-short">Amount</div>
-                <div className="list-item-short">Puca value</div>
+                <div className="list-item-short">Value (points)</div>
                 <div className="list-item-very-short">Sent</div>
                 <div className="list-item-short">Sold for</div>
                 <div className="list-item-middle"></div>

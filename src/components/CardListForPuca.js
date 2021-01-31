@@ -14,7 +14,7 @@ export const CardListForPuca = (props) => { // export for testing
                 <div className="list-item-short">Cost</div>
                 <div className="list-item-very-short">Sent</div>
                 <div className="list-item-middle">Shipping costs</div>
-                <div className="list-item-short">Puca value</div>
+                <div className="list-item-short">Value (points)</div>
                 <div className="list-item-short">Percentage</div>
             </div>
             {props.location === "/forpuca" ? <div className="list-body">
